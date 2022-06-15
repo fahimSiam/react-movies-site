@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 const App = () => {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
+    setCounter(100);
     document.title = `You counter is ${counter} now`;
-  }, [counter]);
+  }, []);
 
   return (
     <div className="App">
